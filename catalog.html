@@ -11,24 +11,12 @@
 			<div class="container clearfix">
 				<nav class="main-navigation">
 					<ul>
-						<li>
-							<a href="#">Главная</a>
-						</li>
-						<li>
-							<a href="#">Информация</a>
-						</li>
-						<li>
-							<a href="#">Новости</a>
-						</li>
-						<li>
-							<a href="#">Прайс-лист</a>
-						</li>
-						<li class="active">
-							<a href="#">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="#" class="active">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
 				
@@ -38,7 +26,7 @@
 			</div>
 		</header>
 
-		<div class="container">
+		<div class="container clearfix">
 			<div class="content-header">
 				<h1>Средства для ухода</h1>
 					<div class="breadcrumbs">
@@ -51,93 +39,94 @@
 			</div>
 				
 			<div class="colomn-left">
-				<form action="#" method="get">
+				<form class="filters" action="#" method="get">
 					<div class="producer">					
 						<h2>Производители:</h2>
 						<ul>
-							<li><lable><input type="radio">Baxter of California</lable></li>
-							<li><lable><input type="radio">Mr Natty</lable></li>
-							<li><lable><input type="radio">Suavecito</lable></li>
-							<li><lable><input type="radio">Malin+Goetz</lable></li>
-							<li><lable><input type="radio">Murray’s</lable></li>
-							<li><lable><input type="radio">American Crew</lable></li>
+							<li><label><input type="checkbox" checked="checked">Baxter of California</label></li>
+							<li><label><input type="checkbox">Mr Natty</label></li>
+							<li><label><input type="checkbox" checked="checked">Suavecito</label></li>
+							<li><label><input type="checkbox">Malin+Goetz</label></li>
+							<li><label><input type="checkbox">Murray’s</label></li>
+							<li><label><input type="checkbox" checked="checked">American Crew</label></li>
 						</ul>
 					</div>
 					
 					<div class="group">
 						<h2>Группы товаров:</h2>
 						<ul>
-							<li><lable><input type="checkbox">Бритвенные принадлежности</lable></li>
-							<li><lable><input type="checkbox" checked>Средства для ухода</lable></li>
-							<li><lable><input type="checkbox">Аксессуары</lable></li>
+							<li><label><input type="radio" name="group" value="Бритвенные принадлежности">Бритвенные принадлежности</label></li>
+							<li><label><input type="radio" name="group" value="Средства для ухода" checked="checked">Средства для ухода</label></li>
+							<li><label><input type="radio" name="group" value="Аксессуары">Аксессуары</label></li>
 						</ul>
-						<p><input class="btn" type="submit">Показать</p>
+						
+						<input class="btn" type="submit" value="Показать">
 					</div>
 				</form>
 			</div>
 			
 			<div class="colomn-right">
-				<article>
-					<figure class="sketch">
-						<img src="img/travelKit4.jpg" alt="Набор для путешествий">
-					</figure>
-					<span>Набор для путешествий<br> «Baxter of California»</span>
-					<div class="price">2 900 РУБ.</div>
-					<div class="buy"><a class="btn">КУПИТЬ</a></div>
-				</article>
-				
-				<article>
-					<figure class="sketch">
-						<img src="img/conditioner.jpg" width="150" height="100" alt="Увлажняющий кондиционер">
-					</figure>
-					<span>Увлажняющий кондиционер<br> «Baxter of California»</span>
-					<div class="price">750 РУБ.</div>
-					<div class="buy"><a class="btn">КУПИТЬ</a></div>
-				</article>
-				
-				<article>
-					<figure class="sketch">
-						<img src="img/gel.jpg" width="150" height="100" alt="Гель для волос">
-					</figure>
-					<span>Гель для волос<br> «SUAVECITO»</span>
-					<div class="price">290 РУБ.</div>
-					<div class="buy"><a class="btn">КУПИТЬ</a></div>
-				</article>
-				
-				<article>
-					<figure class="sketch">
-						<img src="img/clay.jpg" width="150" height="100" alt="Глина для укладки волос">
-					</figure>
-					<span>Глина для укладки волос<br> «American crew»</span>
-					<div class="price">500 РУБ.</div>
-					<div class="buy"><a class="btn">КУПИТЬ</a></div>
-				</article>
-				
-				<article>
-					<figure class="sketch">
-						<img src="img/gel1.jpg" width="150" height="100" alt="Гель для волос">
-					</figure>
-					<span>Гель для волос<br> «AMERICAN CREW»</span>
-					<div class="price">300 РУБ.</div>
-					<div class="buy"><a class="btn">КУПИТЬ</a></div>
-				</article>
-				
-				<article>
-					<figure class="sketch">
-						<img src="img/shavingKit.jpg" width="150" height="100" alt="Набор для бритья">
-					</figure>
-					<span>Набор для бритья<br> «Baxter of California»</span>
-					<div class="price">3 900 РУБ.</div>
-					<div class="buy"><a class="btn">КУПИТЬ</a></div>
-				</article>
-				
-				<div class="page-nubmer">
-					<ul>
-						<li><a class="btn" href="#">1</a></li>
-						<li>2</li>
-						<li><a class="btn" href="#">3</a></li>
-						<li><a class="btn" href="#">4</a></li>
-					</ul>
+				<div class="catalog">
+					<article>
+						<figure class="sketch">
+							<img src="img/travelKit4.jpg" width="220" height="165" alt="Набор для путешествий">
+						</figure>
+						<span>Набор для путешествий<br> «Baxter of California»</span>
+						<div class="price">2 900 РУБ.</div>
+						<div class="buy"><a class="btn">КУПИТЬ</a></div>
+					</article>
+					
+					<article>
+						<figure class="sketch">
+							<img src="img/conditioner.jpg" width="220" height="165" alt="Увлажняющий кондиционер">
+						</figure>
+						<span>Увлажняющий кондиционер<br> «Baxter of California»</span>
+						<div class="price">750 РУБ.</div>
+						<div class="buy"><a class="btn">КУПИТЬ</a></div>
+					</article>
+					
+					<article>
+						<figure class="sketch">
+							<img src="img/gel.jpg" width="220" height="165" alt="Гель для волос">
+						</figure>
+						<span>Гель для волос<br> «SUAVECITO»</span>
+						<div class="price">290 РУБ.</div>
+						<div class="buy"><a class="btn">КУПИТЬ</a></div>
+					</article>
+					
+					<article>
+						<figure class="sketch">
+							<img src="img/clay.jpg" width="220" height="165" alt="Глина для укладки волос">
+						</figure>
+						<span>Глина для укладки волос<br> «American crew»</span>
+						<div class="price">500 РУБ.</div>
+						<div class="buy"><a class="btn">КУПИТЬ</a></div>
+					</article>
+					
+					<article>
+						<figure class="sketch">
+							<img src="img/gel1.jpg" width="220" height="165" alt="Гель для волос">
+						</figure>
+						<span>Гель для волос<br> «AMERICAN CREW»</span>
+						<div class="price">300 РУБ.</div>
+						<div class="buy"><a class="btn">КУПИТЬ</a></div>
+					</article>
+					
+					<article>
+						<figure class="sketch">
+							<img src="img/shavingKit.jpg" width="220" height="165" alt="Набор для бритья">
+						</figure>
+						<span>Набор для бритья<br> «Baxter of California»</span>
+						<div class="price">3 900 РУБ.</div>
+						<div class="buy"><a class="btn">КУПИТЬ</a></div>
+					</article>
+					
+					<div class="page-nubmer">
+						<a class="btn" href="#">1</a>
+						<a>2</a>
+						<a class="btn" href="#">3</a>
+						<a class="btn" href="#">4</a>
+					</div>
 				</div>
 			</div>
 		</div>

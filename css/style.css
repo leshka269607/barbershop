@@ -1,23 +1,331 @@
+/*div, nav, section, article, header, footer, form {
+	outline: 1px solid red;
+}*/
+
 body {
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	
+	background-color: #f6f3f0;
+
 	font-size: 14px;
-	line-height: normal;
+	line-height: 24px;
 	color: black;
 	font-weight: normal;
-	font-family: Roboto Medium;
+	font-family: "PTsans NarrowBold", Arial, Sans-Serif;
 }
 
 h1 {
 	font-size: 30px;
-	line-height: normal;
-	color: black;
 	font-weight: bold;
-	font-family: Roboto Medium;
 }
 
 h2 {
 	font-size: 24px;
-	line-height: normal;
-	color: black;
 	font-weight: bold;
-	font-family: Roboto Medium;
 }
+
+/************************************ Общие классы для создания сетки*/
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/************************************ Шапка */
+header {
+	background-color: black;
+	font-size: 16px;
+}
+
+header a {
+  text-decoration: none;
+  margin-right:35px;
+  color: white;
+}
+
+header ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+header .container {
+	height: 72px;
+	margin-bottom: 50px;
+}
+
+.main-navigation {
+  float: left;
+  margin: 20px 0 0 30px;
+}
+
+.main-navigation li{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-block {
+  float:right;
+  margin: 20px 30px 0 0;
+}
+
+/************************************ Контент */
+.content-header {
+	margin-bottom: 45px;
+}
+
+.content-header h1 {
+	margin: 0 0 25px 0;
+}
+
+.content-header ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+.content-header li{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content-header a {
+	text-decoration: none;
+	margin-right: 20px;
+	color: black;
+}
+
+		/************************************ Основной контент */
+			/************************************ Левая колонка */
+.container .colomn-left {
+	float: left;
+}
+
+.filters {
+	float: left;
+	margin-right: 10px;
+	width: 220px;
+}
+
+.filters h2 {
+	margin: 0 0 20px 0;
+}
+
+.filters ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+.filters li {
+	margin-bottom: 15px;
+}
+
+.producer {
+	margin-bottom: 50px;
+}
+
+		/************************************ Основной контент */
+			/************************************ Правая колонка */
+.container .colomn-right {
+	float: right;
+}
+
+.catalog {
+	width: 700px;
+}
+
+article {
+	display: inline-block;
+	width: 220px;
+	vertical-align: top;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	background-color: white;
+	height: 286px;
+}
+
+article:nth-child(3n+3) {
+	margin-right: 0px;
+}
+
+article figure {
+	margin: 0 0 15px 0;
+	padding: 0px;
+}
+
+article span {
+	display: block;
+	margin: 15px 10px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.price,
+.buy {
+	float: left;
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.price {
+	width: 105px;
+	margin-left: 15px;
+	background-color: #e5e5e5;
+}
+
+.buy {
+	width: 75px;
+	margin-right: 15px;
+	
+	background-color: black;
+	color: white;
+}
+
+		/************************************ Основной контент */
+			/************************************ Странички */
+.page-nubmer {
+	margin-bottom: 45px;
+}
+
+.page-nubmer a {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	width: 40px;
+	height: 30px;
+	text-align: center;
+}
+
+/************************************ Подвал */
+footer {
+	padding: 20px 0;
+	background-color: 232323;
+	min-height: 185px;
+	color: white;
+	font-weight: bold;
+}
+
+.footer-contacts {
+	float: left;
+	width: 220px;
+
+	margin-right: 80px;
+	
+}
+
+.footer-social {
+	float: left;
+	width: 140px;
+	text-align: center;
+}
+
+.footer-copyright {
+	float: right;
+	width: 220px;
+	text-align: center;
+}
+
+
+/************************************ Catalog-item */
+				/************************************ Колонка слева */
+.colomn-left foto {
+	width: 480px;
+	margin-right: 20px;
+}
+
+.colomn-left figure {
+	margin: 0px;
+}
+
+.foto-small figure {
+	display: inline-block;
+	width: 140px;
+	height: 150px;
+	margin-right: 16px;
+}
+
+.foto-small figure:last-child {
+	margin-right: 0px;
+}
+
+/************************************ Catalog-item */
+				/************************************ Колонка справа */
+					/************************************ Блок описание */
+.description {
+	width: 400px;
+	margin-bottom: 60px;
+}
+
+.status {
+	float: left;
+	height: 40px;
+}
+
+.articul {
+	float: right;
+	height: 40px;
+}
+
+.articul + div {
+	margin-bottom: 40px;
+	clear: both;
+}
+
+.description .price {
+	margin: 0px;
+}
+
+.descriprion .price {
+	margin-left: 0px;
+}
+
+/************************************ Catalog-item */
+				/************************************ Колонка справа */
+					/************************************ Блок состав */
+.composition h2 {
+	margin-bottom: 25px;
+}
+
+.composition ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+.composition li {
+	margin-bottom: 8px;
+}
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
