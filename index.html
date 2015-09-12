@@ -1,21 +1,138 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8">	
     <title>Барбершоп «Бородинский»</title>
-    <meta name="description" content="Лучший барбершоп в Санкт-Петербурге">
+	
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=latin,cyrillic-ext">
+	
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style1.css">
   </head>
   <body>
-    <h1>Барбершоп «Бородинский»</h1>
+    <header class="main-header">
+		<div class="container clearfix">
+	  
+			<nav class="main-navigation">
+				<ul>
+					<li class="active"><a href="#">Главная</a></li>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#" class="active">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		
+			<div class="user-block">
+			  <a href="#" class="login">Вход</a>
+			</div>
+		</div>
+    </header>
 
-    <p>На дворе 21 век, время технологий и стартапов. Вместе с этим, набирает оборот и мода на винтажные вещи, ручной труд, историческое наследие.</p>
+    <div class="container">
+      <figure class="logo">
+        <img src="img/logo.png" width="368" height="204" alt="">
+      </figure>
+      
+      <section class="features-row clearfix">
+        <div class="features-item">
+          <div class="features-title">Быстро</div>
+          <p>Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
+        </div>
+        <div class="features-item">
+          <div class="features-title">Круто</div>
+          <p>Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
+        </div>
+        <div class="features-item">
+          <div class="features-title">Дорого</div>
+          <p>Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
+        </div>
+      </section>
 
-    <p>Точкой соприкосновения этих двух миров становятся многочисленные частные пивоварни, парикмахерские, и магазины, появляющиеся у нас на глазах, но имеющие стилистику американского винтажа.</p>
+      <div class="index-content clearfix">
+        <section class="content-column-left">
+          <h2 class="content-column-title">Новости</h2>
+          <ul class="news-preview">
+            <li>
+              Нам наконец завезли Ягермайстер! Теперь вы&nbsp;можете пропустить стаканчик во&nbsp;время стрижки<br>
+              <time datetime="2013-09-25">25 сентября</time>
+            </li>
+            <li>
+              В&nbsp;нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец, обладатель множества титулов и&nbsp;наград пополнил наши стройные ряды<br>
+              <time datetime="2013-09-19">19 сентября</time>
+            </li>
+          </ul>
+          <a href="#" class="btn">Все новости</a>
+        </section>
+        <section class="content-column-right">
+          <h2 class="content-column-title">Фотогалерея</h2>
+          <div class="gallery">
+            <figure class="gallery-content">
+              <img src="img/photo-1.jpg" width="286" height="164" alt="">
+            </figure>
+            <button class="btn gallery-prev" disabled>Назад</button>
+            <button class="btn gallery-next">Вперед</button>
+          </div>
+        </section>
+      </div>
 
-    <p>Достаточно взглянуть на сайты дня на awwwards и становится очевидно, что это настоящий тренд, который неизбежно доберётся и до России в ближайшем будущем. Поэтому давайте приведём себя в готовность и посмотрим на макеты вымышленного барбершопа из Москвы, который так хочет казаться аутентичным и Нью-Йоркским!</p>
+      <div class="index-content clearfix">
+        <section class="content-column-left">
+          <div class="main-contacts">
+            <h2 class="content-column-title">Контактная информация</h2>
+            <p>
+              Barbershop «Borodinski»<br>
+              Адрес: г. Санкт-Петербург, ул. Собаки Павлова, д. 13<br>
+              Телефон: +7 (495) 666-02-66
+            </p>
+            <p>
+              Время работы:<br>
+              пн — пт: с 10:00 до 22:00<br>
+              сб — вс: с 10:00 до 19:00
+            </p>
+            <a href="#" class="btn">Как проехать</a>
+            <a href="#" class="btn">Обратная связь</a>
+          </div>
+        </section>
+        <section class="content-column-right">
+          <div class="appointment-form">
+            <h2 class="content-column-title">Записаться</h2>
+            <p>Укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения брони</p>
+            <form action="/echo" method="post">
+              <input type="date" name="date" value="" placeholder="Дата">
+              <input type="time" name="time" value="" placeholder="Время">
+              <input type="text" name="name" value="" placeholder="Ваше имя">
+              <input type="tel" name="phone" value="" placeholder="Телефон">
+			  <button type="submit" class="btn">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+	
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				Барбершоп «Бородинский»<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				телефон: +7 (495) 666-02-66
+			</section>
 
-    <p><a href="http://vk.com/barbershop_borodinski">Мы ВКонтакте</a>.</p>
+			<section class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+			</section>
 
-    <p>Разработка сайта: Лёшка!</p>
+			<section class="footer-copyright">
+				<p>Разработано:</p>
+				<a href="#" class="btn">htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+
   </body>
 </html>

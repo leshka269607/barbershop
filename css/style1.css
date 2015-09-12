@@ -1,0 +1,438 @@
+body {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+
+  /* обычно так не делают, но здесь такой макет */
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  color: #fff;
+
+  min-width: 960px;
+  background: #f6f3f0 url("../img/body-bg.jpg") no-repeat center top;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 60px;
+  background: #000;
+}
+
+.main-navigation {
+  float: left;
+
+  width: 780px;
+}
+
+.user-block {
+  float: right;
+
+  max-width: 140px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-navigation a:hover {
+  background: #242424;
+}
+
+.main-navigation .active a {
+  position: relative;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active a:after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+
+  height: 5px;
+
+  background: white;
+}
+
+.login {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 20px;
+  padding-left: 50px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.login:hover {
+  background: #242424;
+}
+
+.login:before {
+  content: "";
+
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: 0 -212px;
+}
+
+.login:hover:before {
+  opacity: .3;
+}
+
+.logo {
+  width: 368px;
+  height: 204px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.logo img {
+  width: 368px;
+  height: 204px;
+}
+
+.features-row {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+
+  width: 300px;
+  margin-right: 20px;
+
+  text-align: center;
+}
+
+.features-item:last-child {
+   margin-right: 0;
+}
+
+.features-title {
+  position: relative;
+
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-item p {
+  margin: 10px;
+}
+
+.features-title:after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+
+  color: #000;
+  background:
+    url("../img/index-content-shadow.png") no-repeat center,
+    #f8f5f2 url("../img/pattern-white.jpg");
+}
+
+.content-column-left {
+  width: 350px; /* спасибо дизайнеру */
+}
+
+.content-column-right {
+  width: 300px;
+}
+
+.content-column-left {
+  float: left;
+}
+
+.content-column-right {
+  float: right;
+}
+
+.content-column-title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-preview {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.news-preview time {
+  text-transform: none;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  margin-right: 16px;
+
+  font-size: 14px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+  background: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background: #663d15;
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: .5;
+}
+
+.btn:disabled:hover {
+  background: #000;
+}
+
+.gallery {
+  position: relative;
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+
+  border: 7px solid white;
+  background: #ccc;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+.index-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.appointment-form  input {
+  float: left;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 106px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #000;
+  background: #f9f6f3;
+  outline: none;
+}
+
+.appointment-form  input:focus {
+  border: 2px solid #663d15;
+}
+
+.appointment-form  input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.appointment-form .btn {
+  clear: both;
+  width: 100%;
+}
+
+.main-footer {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  background: #252525 url("../img/pattern-black.jpg");
+}
+
+.footer-contacts {
+  float: left;
+
+  width: 320px;
+  margin-right: 80px;
+}
+
+.footer-contacts a {
+  color: #fff;
+}
+
+.footer-social {
+  float: left;
+  text-align: center;
+}
+
+.footer-copyright {
+  float: right;
+
+  max-width: 320px;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  margin: 0 2px;
+  display: inline-block;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+
+  font-size: 0;
+  text-decoration: none;
+
+  background: #000 url("../img/sprite.png") no-repeat center;
+}
+
+.social-btn:hover {
+    background-color: #fff;
+}
+
+.social-btn-vk {
+  background-position: 9px -968px;
+}
+
+.social-btn-fb {
+  background-position: 16px -691px;
+}
+
+.social-btn-inst {
+  background-position: 11px -832px;
+}
+
+.social-btn-vk:hover {
+  background-position: 9px -902px;
+}
+
+.social-btn-fb:hover {
+  background-position: 16px -619px;
+}
+
+.social-btn-inst:hover {
+  background-position: 11px -762px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+  color: #000;
+  background: #fff;
+}

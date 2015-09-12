@@ -207,9 +207,9 @@ article span {
 }
 
 /************************************ Подвал */
-footer {
+.main-footer {
 	padding: 20px 0;
-	background-color: 232323;
+	background-color: #232323;
 	min-height: 185px;
 	color: white;
 	font-weight: bold;
